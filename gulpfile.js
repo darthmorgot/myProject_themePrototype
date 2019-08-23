@@ -2,7 +2,6 @@
 
 global.$ = {
 	gulp: require('gulp'),
-	browserSync: require('browser-sync').create(),
 	path: {
 		task: require('./gulp/path/tasks')
 	}
@@ -10,14 +9,17 @@ global.$ = {
 
 const {series, parallel} = $.gulp;
 
-$.path.task.forEach((taskPath) => {
-	require(taskPath)();
-});
+function getTask(task) {
+	for (let key in $.path.task) {
+		if (key === task) {
+			return require($.path.task[key]); 
+		}
+	}
+}
 
-$.gulp.task('dev', series(
-	'clean',
-	parallel(
-		'fonts'
-	)
-));
+const clean = getTask('clean');
+const fonts = getTask('fonts');
 
+let dev = series(clean, parallel(fonts));
+
+exports.dev = dev;

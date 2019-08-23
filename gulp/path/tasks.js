@@ -1,4 +1,4 @@
-module.exports = [
-	'./gulp/tasks/clean',
-	'./gulp/tasks/fonts'
-];
+module.exports = {
+	clean: './gulp/tasks/clean',
+	fonts: './gulp/tasks/fonts'
+};
