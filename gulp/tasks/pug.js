@@ -11,14 +11,14 @@ function pugCompile() {
 	return src('./dev/pug/*.pug')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
-				title: 'Error when optimizing images',
+				title: 'Error when compiling pug',
 				message: err.message
 			}))
 		}))
 		.pipe(changed('./build', {extension: '.html'}))
 		.pipe(pugInheritance({basedir: './dev/pug/', skip: 'node_modules'}))
 		.pipe(pug({
-			// pretty: true
+			pretty: true
 		}))
 		.pipe(dest('./build'))
 };
