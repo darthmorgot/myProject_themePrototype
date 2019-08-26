@@ -3,5 +3,6 @@ module.exports = {
 	fonts: './gulp/tasks/fonts',
 	imagesDev: './gulp/tasks/imagesDev',
 	imagesBuild: './gulp/tasks/imagesBuild',
-	pug: './gulp/tasks/pug'
+	pug: './gulp/tasks/pug',
+	scripts: './gulp/tasks/scripts'
 };

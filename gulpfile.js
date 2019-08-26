@@ -22,9 +22,10 @@ const fonts = getTask('fonts');
 const imagesDev = getTask('imagesDev');
 const imagesBuild = getTask('imagesBuild');
 const pug = getTask('pug');
+const scripts = getTask('scripts');
 
-let dev = series(clean, parallel(fonts, imagesDev, pug));
-let build = series(clean, parallel(fonts, imagesBuild, pug));
+let dev = series(clean, parallel(fonts, imagesDev, pug, scripts));
+let build = series(clean, parallel(fonts, imagesBuild, pug, scripts));
 
 exports.dev = dev;
 exports.build = build;
