@@ -4,5 +4,6 @@ module.exports = {
 	imagesDev: './gulp/tasks/imagesDev',
 	imagesBuild: './gulp/tasks/imagesBuild',
 	pug: './gulp/tasks/pug',
-	scripts: './gulp/tasks/scripts'
+	scripts: './gulp/tasks/scripts',
+	serve: './gulp/tasks/serve'
 };
