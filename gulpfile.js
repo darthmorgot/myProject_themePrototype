@@ -24,9 +24,11 @@ const imagesBuild = getTask('imagesBuild');
 const pug = getTask('pug');
 const scripts = getTask('scripts');
 const serve = getTask('serve');
+const watch = getTask('watch');
 
-let dev = series(clean, parallel(fonts, imagesDev, pug, scripts, serve));
+let dev = series(clean, parallel(fonts, imagesDev, pug, scripts));
 let build = series(clean, parallel(fonts, imagesBuild, pug, scripts));
 
 exports.dev = dev;
 exports.build = build;
+exports.default = series(dev, parallel(watch, serve));
