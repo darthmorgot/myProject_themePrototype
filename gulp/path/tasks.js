@@ -6,5 +6,6 @@ module.exports = {
 	pug: './gulp/tasks/pug',
 	scripts: './gulp/tasks/scripts',
 	serve: './gulp/tasks/serve',
-	watch: './gulp/tasks/watch'
+	watch: './gulp/tasks/watch',
+	stylesDev: './gulp/tasks/stylesDev'
 };
