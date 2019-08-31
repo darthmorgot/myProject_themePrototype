@@ -1,0 +1,24 @@
+@import "utils/_mixins";
+@import "utils/_vars";
+@import "../../../node_modules/normalize.css/normalize";
+
+html,
+body {
+	@include clear;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	@include clear;
+}
+
+.title {
+	font-size: 24px;
+	color: $title-color;
+}
+
+.text {
+	margin-left: 20px;
+}
