@@ -26,9 +26,10 @@ const scripts = getTask('scripts');
 const serve = getTask('serve');
 const watch = getTask('watch');
 const stylesDev = getTask('stylesDev');
+const stylesBuild = getTask('stylesBuild');
 
 let dev = series(clean, parallel(fonts, imagesDev, pug, stylesDev, scripts));
-let build = series(clean, parallel(fonts, imagesBuild, pug, scripts));
+let build = series(clean, parallel(fonts, imagesBuild, pug, stylesBuild, scripts));
 
 exports.dev = dev;
 exports.build = build;
