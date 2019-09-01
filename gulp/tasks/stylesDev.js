@@ -7,7 +7,7 @@ const	scss = require('gulp-sass');
 const	sourcemaps = require('gulp-sourcemaps');
 const	autoprefixer = require('gulp-autoprefixer');
 
-function styles() {
+function stylesDev() {
 	return src('./dev/static/styles/styles.scss')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
@@ -22,4 +22,4 @@ function styles() {
 		.pipe(dest('./build/css'))
 };
 
-module.exports = styles;
+module.exports = stylesDev;
