@@ -23,13 +23,15 @@ const imagesDev = getTask('imagesDev');
 const imagesBuild = getTask('imagesBuild');
 const pug = getTask('pug');
 const scripts = getTask('scripts');
+const libsDev = getTask('libsDev');
 const serve = getTask('serve');
 const watch = getTask('watch');
 const stylesDev = getTask('stylesDev');
 const stylesBuild = getTask('stylesBuild');
+const svg = getTask('svg');
 
-let dev = series(clean, parallel(fonts, imagesDev, pug, stylesDev, scripts));
-let build = series(clean, parallel(fonts, imagesBuild, pug, stylesBuild, scripts));
+let dev = series(clean, parallel(fonts, imagesDev, pug, stylesDev, libsDev, scripts, svg));
+let build = series(clean, parallel(fonts, imagesBuild, pug, stylesBuild, libsDev, scripts, svg));
 
 exports.dev = dev;
 exports.build = build;
