@@ -4,12 +4,9 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const webpack = require('webpack-stream');
 
-let isDev = true;
-let isProd = !isDev;
-
 let webConfig = {
-	mode: isDev ? 'development' : 'production',
-	devtool: isDev ? 'eval-source-map' : 'none',
+	mode: 'development',
+	devtool: 'eval-source-map',
 	output: {
 		filename: 'index.js'
 	},
@@ -22,7 +19,7 @@ let webConfig = {
 	}
 };
 
-function scripts() {
+function scriptsDev() {
 	return src('./dev/static/js/index.js')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
@@ -34,4 +31,4 @@ function scripts() {
 		.pipe(dest('./build/js'));
 }
 
-module.exports = scripts;
+module.exports = scriptsDev;
