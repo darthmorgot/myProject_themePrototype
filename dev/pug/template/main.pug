@@ -1,0 +1,38 @@
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width")
+
+		title #{title}
+		meta(name="keywords" content="")
+		meta(name="description" content="Уникальный, не более 150 символов")
+		
+		link(rel="icon" type="image/x-icon" href="favicon.ico")
+		link(rel="icon" type="image/png" href="favicon.png")
+
+		link(rel="apple-touch-icon" href="custom-icon.png")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black")
+		
+		link(rel="stylesheet" href="css/styles.css")
+		
+		<!--[if lt IE 9]>
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js")
+		<![endif]-->
+	body(class=pageClass)
+		include ../modules/header
+		block content
+
+		//- svg(class="svg-sprite-icon icon-satellite")
+		//- 	use(xlink:href="img/svg/symbol/sprite.svg#satellite")
+		//- svg(class="svg-sprite-icon icon-telescope")
+		//- 	use(xlink:href="img/svg/symbol/sprite.svg#telescope")
+		
+		include ../modules/footer
+		script(src="js/index.js")
+		block script
