@@ -11,7 +11,7 @@ const pugInheritance = require('gulp-pug-inheritance');
 const filter = require('gulp-filter');
 
 function pugCompile() {
-	return src('./dev/pug/**/*.pug')
+	return src('./dev/pug/*.pug')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
 				title: 'Error when compiling pug',
@@ -27,7 +27,7 @@ function pugCompile() {
 		.pipe(pug({
 			pretty: true
 		}))
-		.pipe(dest('./build'))
+		.pipe(dest('./build'));
 };
 
 module.exports = pugCompile;
