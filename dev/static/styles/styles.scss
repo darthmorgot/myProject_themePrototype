@@ -1,24 +1,12 @@
 @import "utils/_mixins";
 @import "utils/_vars";
-@import "../../../node_modules/normalize.css/normalize";
+@import "utils/_libs";
+@import "utils/_fonts";
 
-html,
+/* ----------------------------- Common styles ----------------------------- */
 body {
-	@include clear;
-	width: 100%;
-	font-family: 'Roboto', sans-serif;
-	color: $body-color;
+	font-family: $main-font;
+	color: $astra;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	@include clear;
-}
-
-.title {
-	font-size: 24px;
-	color: $title-color;
-}
-
-.text {
-	margin-left: 20px;
-}
+@import "modules/modules";
