@@ -22,7 +22,7 @@ function svg() {
 			}
 		}))
 		.pipe(cheerio({
-			run: function ($) {
+			run: function($) {
 				$('[fill]').removeAttr('fill');
 				$('[stroke]').removeAttr('stroke');
 				$('[style]').removeAttr('style');
@@ -36,6 +36,12 @@ function svg() {
 					sprite: "sprite.svg"
 				}
 			}
+		}))
+		.pipe(cheerio({
+			run: function($) {
+				$('svg').append('<view id="satellite-view" viewBox="0 0 470 470" /><view id="telescope-view" viewBox="0 470 470.005 470.005" /><use xlink:href="#satellite" width="470" height="470" x="0" y="0"></use><use xlink:href="#telescope" width="470.005" height="470.005" x="0" y="470"></use>');
+			},
+			parserOptions: {xmlMode: true}
 		}))
 		.pipe(dest('./build/img/svg'));
 };
