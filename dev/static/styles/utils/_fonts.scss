@@ -1,0 +1,30 @@
+/* -------------------------------- Fonts ---------------------------------- */
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular-webfont.eot');
+	src: url('../fonts/Roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/Roboto/Roboto-Regular-webfont.woff') format('woff'),
+			 url('../fonts/Roboto/Roboto-Regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Robotobold';
+	src: url('../fonts/Roboto/Roboto-Bold-webfont.eot');
+	src: url('../fonts/Roboto/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/Roboto/Roboto-Bold-webfont.woff') format('woff'),
+			 url('../fonts/Roboto/Roboto-Bold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Robotoitalic';
+	src: url('../fonts/Roboto/Roboto-Italic-webfont.eot');
+	src: url('../fonts/Roboto/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/Roboto/Roboto-Italic-webfont.woff') format('woff'),
+			 url('../fonts/Roboto/Roboto-Italic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
