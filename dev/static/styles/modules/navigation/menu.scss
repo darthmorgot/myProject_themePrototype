@@ -1,0 +1,41 @@
+/* ------------------------------- Menu style ------------------------------ */
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 15px;
+}
+
+.home-nav {
+	width: 700px;
+	margin-top: 10px;
+	
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.nav {
+	&__list {
+		list-style: none;
+	}
+	&__item {
+		margin-bottom: 10px;
+	}
+	&__link {
+		text-decoration: none;
+		color: $astra;
+		font-size: 24px;
+		text-transform: uppercase;
+		transition: all 0.3s;
+	}
+	&__active,
+	&__link:hover {
+		color: $white;
+		text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
+	}
+}
