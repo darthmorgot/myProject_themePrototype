@@ -1,0 +1,36 @@
+/* ------------------------------ Search style ----------------------------- */
+.home-search {
+	height: 38px;
+}
+
+.search{
+	&__string {
+		width: 100%;
+		min-width: 150px;
+		font-size: 1em;
+		padding: 10px;
+		padding-right: 40px;
+		border-radius: 3px;
+		outline: none;
+		border: none;
+		background-color: $astra;
+		color: $kabul;
+	}
+	&__string::placeholder {
+		color: $kabul;
+	}
+	&__btn {
+		background: url(../img/svg/symbol/sprite.svg#satellite-view) no-repeat;
+		// background: url(../img/svg/symbol/sprite.svg#telescope-view) no-repeat;
+		border: none;
+		cursor: pointer;
+		width: 25px;
+		height: 25px;
+		margin: 0;
+		padding: 0;
+		float: right;
+		position: relative;
+		top: -32px;
+		right: 8px;
+	}
+}
