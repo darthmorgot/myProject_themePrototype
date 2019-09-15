@@ -1,0 +1,67 @@
+/* ------------------------------ Main style ------------------------------- */
+.main {
+	background: url(../img/general/bg-grid.png), url(../img/general/home-back.jpg) no-repeat center center;
+	background-color: $astra;
+	background-size: auto, cover;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+
+		.manifest {
+			border-radius: 3px;
+			padding: 20px;
+			background-color: $hemp;
+
+			&__title {
+				margin-top: 0;
+				text-align: center;
+				letter-spacing: 0.02em;
+			}
+		}
+
+		.preview {
+			display: flex;
+			background-color: $hemp;
+			padding: 20px;
+			border-radius: 3px;
+			margin-top: 30px;
+
+			&__left {
+				margin-right: 20px;
+				flex: 1 1 100%;
+			}
+			&__img {
+				display: block;
+				width: 100%;
+			}
+			&__title {
+				margin-top: 0;
+				margin-bottom: 10px;
+				line-height: 0.75;
+			}
+			&__date {
+				font-size: 12px;
+			}
+			&__title-link {
+				letter-spacing: 0.02em;
+			}
+			&__more {
+				text-transform: uppercase;
+			}
+			&__title-link,
+			&__more {
+				color: $astra;
+				text-decoration: none;
+				transition: all 0.3s;
+			}
+			&__title-link:hover,
+			&__more:hover {
+				color: $white;
+				text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
+			}
+		}
+	}
+}
