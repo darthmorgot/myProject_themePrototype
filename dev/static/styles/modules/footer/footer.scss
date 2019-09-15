@@ -1,0 +1,18 @@
+/* ------------------------------ Footer style ----------------------------- */
+.home-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	background: $black-pearl url(../img/general/main-back.jpg);
+	box-sizing: border-box;
+
+	&__author {
+		color: $astra;
+		text-decoration: none;
+		transition: all 0.3s;
+	}
+	&__author:hover {
+		color: $white;
+		text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
+	}
+}
