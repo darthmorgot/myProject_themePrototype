@@ -1,0 +1,18 @@
+.home-header {
+	padding: 10px 0;
+	text-align: center;
+	background: $black-pearl url(../img/general/main-back.jpg);
+	box-sizing: border-box;
+
+	.home-heading {
+		margin-top: 40px;
+		margin-bottom: 20px;
+
+		&__title {
+			@extend .header__title;
+		}
+		&__annotation {
+			@extend .header__annotation;
+		}
+	}
+}
