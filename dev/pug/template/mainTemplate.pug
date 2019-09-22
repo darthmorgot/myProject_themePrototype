@@ -26,7 +26,10 @@ html(lang="ru-RU")
 			script(src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js")
 		<![endif]-->
 	body(class=pageClass)
-		include ../modules/header/header
+		if(pageClass === 'index-page')
+			include ../modules/header/home-header
+		else
+			include ../modules/header/header
 		block content
 		include ../modules/footer
 		script(src="js/index.js")
