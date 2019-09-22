@@ -65,3 +65,16 @@
 		}
 	}
 }
+
+.blog-main {
+	display: flex;
+
+	.sidebar {
+		flex: 1 0 $sidebar-width;
+		width: $sidebar-width;
+		box-sizing: border-box;
+		background: $black-pearl url(../img/general/main-back.jpg) 0 2%;
+		padding-left: 10px;
+		padding-right: 15px;
+	}
+}
