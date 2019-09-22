@@ -1,28 +1,25 @@
 /* ------------------------------ Header style ----------------------------- */
-.home-header {
-	padding: 10px 0;
+.header {
+	height: $header-height;
+	margin: 0 auto;
+	padding: 0.625em 0;
 	text-align: center;
 	background: $black-pearl url(../img/general/main-back.jpg);
 	box-sizing: border-box;
 
-	.home-heading {
-		margin-top: 40px;
-		margin-bottom: 20px;
-
-		&__title {
-			font-size: 3em;
-			font-weight: bold;
-			margin-top: 0;
-			margin-bottom: 0.25em;
-			letter-spacing: 0.03em;
-			text-transform: uppercase;
-		}
-		&__annotation {
-			font-size: 1.2em;
-			font-weight: normal;
-			margin-top: 0;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
+	&__title {
+		font-size: 3em;
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 0.25em;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+	&__annotation {
+		font-size: 1.2em;
+		font-weight: normal;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-transform: uppercase;
 	}
 }
