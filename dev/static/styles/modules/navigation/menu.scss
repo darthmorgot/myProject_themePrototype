@@ -39,3 +39,11 @@
 		text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
 	}
 }
+
+.blog-nav {	
+	&__list {
+		@extend .nav__list;
+		padding-left: 15px;
+		margin-bottom: 40px;
+	}
+}
