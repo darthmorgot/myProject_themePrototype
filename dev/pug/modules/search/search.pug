@@ -1,4 +1,10 @@
-.search.home-search
-	form(action="")
-		input(type="search" placeholder="Поиск").search__string
-		input(type="submit" value="").search__btn
+if(pageClass === 'index-page')
+	.search.home-search
+		form(action="")
+			input(type="search" placeholder="Поиск").search__string
+			input(type="submit" value="").search__btn.search__btn--home-bg
+else
+	.search
+		form(action="")
+			input(type="search" placeholder="Поиск").search__string
+			input(type="submit" value="").search__btn.search__btn--blog-bg
