@@ -7,10 +7,15 @@ $black-pearl: #051721;
 $kabul: #6a453c;
 $hemp: rgba(106, 69, 60, 0.7);
 $white-shadow: rgba(255, 255, 255, 0.5);
+$silver: #cccccc;
+$scooter: #20B7DF;
 
 // Sizes
 $header-height: 7.25em;
 $sidebar-width: 18.75em;
+$tablet-height: 800px;
+$scroll-width: calc(100% - 18.75em);
+$wrapper-height: calc(100vh - 7.25em);
 
 $base-font-size: 14px;
 $content-size: 1140px;
