@@ -16,3 +16,12 @@
 		text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
 	}
 }
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 300px;
+	padding: 1em;
+	background: $black-pearl url(../img/general/main-back.jpg);
+	box-sizing: border-box;
+}
