@@ -20,8 +20,6 @@
 		color: $kabul;
 	}
 	&__btn {
-		background: url(../img/svg/symbol/sprite.svg#satellite-view) no-repeat;
-		// background: url(../img/svg/symbol/sprite.svg#telescope-view) no-repeat;
 		border: none;
 		cursor: pointer;
 		width: 25px;
@@ -32,5 +30,11 @@
 		position: relative;
 		top: -32px;
 		right: 8px;
+		&--home-bg {
+			background: url(../img/svg/symbol/sprite.svg#satellite-view) no-repeat;
+		}
+		&--blog-bg {
+			background: url(../img/svg/symbol/sprite.svg#telescope-view) no-repeat;
+		}
 	}
 }
