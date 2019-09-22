@@ -1,0 +1,89 @@
+.scroll {
+	width: calc(100% - var(--sidebar-width));
+	overflow-x: auto;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	background-color: #ccc;
+}
+
+.wrapper {
+	width: 7000px;
+	height: calc(100vh - var(--header-height));
+	background: url(../images/bg-grid.png), url(../images/mars.jpg) no-repeat 0 25%;
+	background-color: #faedc0;
+	background-size: auto, cover;
+}
+
+.block {
+	padding: 10px;
+	width: 500px;
+	position: absolute;
+}
+
+.block-1,
+.block-2,
+.block-3,
+.block-4,
+.block-5,
+.block-6,
+.block-7 {
+	background: url(../images/circle.png) no-repeat 0 100%;
+	padding-left: 150px;
+}
+
+.block-1 {
+	left: 170px;
+	top: 15vh;
+}
+
+.block-2 {
+	left: 1170px;
+	top: 35vh;
+}
+
+.block-3 {
+	left: 2170px;
+	top: 50vh;
+}
+
+.block-4 {
+	left: 3170px;
+	top: 5vh;
+}
+
+.block-5 {
+	left: 4170px;
+	top: 40vh;
+}
+
+.block-6 {
+	left: 5170px;
+	top: 30vh;
+}
+
+.block-7 {
+	left: 6170px;
+	top: 20vh;
+}
+
+.preview {
+	background-color: rgba(106, 69, 60, 0.7);
+	padding: 10px;
+	border: 2px solid #20B7DF;
+	border-radius: 5px;
+}
+
+.preview__title-link,
+.preview__more {
+	color: #faedc0;
+	text-decoration: none;
+}
+
+.preview__more {
+	text-transform: uppercase;
+}
+
+.preview__more:hover {
+	text-decoration: underline;
+}
