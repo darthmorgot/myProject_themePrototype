@@ -1,7 +1,22 @@
-(function() {
-	'use strict';
+import svg4everybody from 'svg4everybody';
+import $ from 'jquery';
+import 'jquery-mousewheel';
+import './jquery.mCustomScrollbar.concat.min.js';
 
-	let test = 'Test OK';
-	console.log(test);
-	
-})();
+document.addEventListener('DOMContentLoaded', function() {
+	svg4everybody({});
+});
+
+$(window).on("load", function () {
+	$(".scroll").mCustomScrollbar({
+		axis: 'x',
+		theme: 'minimal-dark',
+		autoExpandScrollbar: true,
+		advanced:{
+			autoExpandHorizontalScroll: true
+		},
+		mouseWheel:{ 
+			scrollAmount: 500 
+		}
+	});
+});
