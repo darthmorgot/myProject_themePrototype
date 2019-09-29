@@ -68,6 +68,8 @@
 
 .blog-main {
 	display: flex;
+	padding-top: 0;
+	padding-bottom: 0;
 
 	.sidebar {
 		flex: 1 0 $sidebar-width;
