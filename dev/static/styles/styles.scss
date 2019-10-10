@@ -5,9 +5,19 @@
 @import "utils/_fonts";
 
 /* ----------------------------- Common styles ----------------------------- */
+html {
+	height: 100%;
+}
+
 body {
 	font-family: $main-font;
 	color: $astra;
+}
+	
+.error-page {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 @import "modules/modules";
