@@ -5,6 +5,10 @@
 	background-size: auto, cover;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	
+	&--error-page {
+		flex: 1;
+	}
 
 	.container {
 		max-width: 1200px;
@@ -32,6 +36,9 @@
 			&__left {
 				margin-right: 20px;
 				flex: 1 1 100%;
+				&--error-page {
+					flex: 0 1 auto;
+				}
 			}
 			&__img {
 				display: block;
@@ -41,6 +48,10 @@
 				margin-top: 0;
 				margin-bottom: 10px;
 				line-height: 0.75;
+
+				&--error-page {
+					margin-bottom: 20px;
+				}
 			}
 			&__date {
 				font-size: 12px;
