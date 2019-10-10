@@ -26,7 +26,7 @@ html(lang="ru-RU")
 			script(src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js")
 		<![endif]-->
 	body(class=pageClass)
-		if(pageClass === 'index-page')
+		if(pageClass === 'index-page' || pageClass === 'error-page')
 			include ../modules/header/home-header
 		else
 			include ../modules/header/header
