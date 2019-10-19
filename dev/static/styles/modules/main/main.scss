@@ -59,12 +59,10 @@
 			&__title-link {
 				letter-spacing: 0.02em;
 			}
-			&__more {
-				text-transform: uppercase;
-			}
 			&__title-link,
 			&__more {
 				color: $astra;
+				text-transform: uppercase;
 				text-decoration: none;
 				transition: all 0.3s;
 			}

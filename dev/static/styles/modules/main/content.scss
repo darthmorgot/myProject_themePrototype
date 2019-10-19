@@ -84,18 +84,22 @@
 				border: 2px solid $scooter;
 				border-radius: 5px;
 
+				&__title {
+					margin-top: 0;
+					margin-bottom: 10px;
+					line-height: 0.75;
+				}
 				&__title-link,
 				&__more {
 					color: $astra;
-					text-decoration: none;
-				}
-
-				&__more {
 					text-transform: uppercase;
+					text-decoration: none;
+					transition: all 0.3s;
 				}
-
+				&__title-link:hover,
 				&__more:hover {
-					text-decoration: underline;
+					color: $white;
+					text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
 				}
 			}
 		}
