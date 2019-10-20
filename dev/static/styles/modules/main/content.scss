@@ -13,6 +13,11 @@
 		background-color: $astra;
 		background-size: auto, cover;
 
+		&--single-page {
+			width: 3520px;
+			background-size: auto, auto;
+		}
+
 		.block {
 			padding: 10px;
 			width: 500px;
@@ -100,6 +105,45 @@
 				&__more:hover {
 					color: $white;
 					text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
+				}
+			}
+		}
+
+		.fragment {
+			padding: 10px;
+			width: 800px;
+			position: absolute;
+
+			&-1 {
+				left: 70px;
+				top: 5vh;
+				@media screen and (max-height: $tablet-height) {
+					top: 5vh;
+				}
+			}
+			&-2 {
+				left: 1010px;
+				top: 5vh;
+				@media screen and (max-height: $tablet-height) {
+					top: 5vh;
+				}
+			}
+			&-3 {
+				left: 1950px;
+				top: 5vh;
+				@media screen and (max-height: $tablet-height) {
+					top: 5vh;
+				}
+			}
+
+			.article {
+				background-color: $hemp;
+				padding: 10px;
+				border: 2px solid $scooter;
+				border-radius: 5px;
+
+				&__title {
+					text-transform: uppercase;
 				}
 			}
 		}
