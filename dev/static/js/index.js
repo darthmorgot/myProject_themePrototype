@@ -1,6 +1,5 @@
 import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
-import 'jquery-mousewheel';
 import './jquery.mCustomScrollbar.concat.min.js';
 
 document.addEventListener('DOMContentLoaded', function() {
