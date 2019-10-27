@@ -27,13 +27,12 @@
 		margin-bottom: 10px;
 	}
 	&__link {
-		text-decoration: none;
 		color: $astra;
 		font-size: 24px;
 		text-transform: uppercase;
 		transition: all 0.3s;
 	}
-	&__active,
+	&__item--active,
 	&__link:hover {
 		color: $white;
 		text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
