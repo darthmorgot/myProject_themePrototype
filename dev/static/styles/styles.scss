@@ -5,15 +5,15 @@
 @import "utils/_fonts";
 
 /* ----------------------------- Common styles ----------------------------- */
-html {
-	height: 100%;
-	box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
 }
 
 body {
