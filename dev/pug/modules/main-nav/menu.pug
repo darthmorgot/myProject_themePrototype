@@ -1,9 +1,5 @@
 .menu
 	nav.nav.home-nav
 		ul.nav__list.home-nav__list
-			+menuItemLink("/", "Главная", "nav__item--active")
-			+menuItemLink("human.html", "Человек")
-			+menuItemLink("earth.html", "Земля")
-			+menuItemLink("universe.html", "Вселенная")
-			+menuItemLink("technology.html", "Технология")
+			+menuItemLink(pageClass, "nav__item--active")
 	include ../search/search
