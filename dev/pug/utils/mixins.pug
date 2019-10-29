@@ -1,6 +1,71 @@
-mixin menuItemLink(link, text, mod)
-	li.nav__item(class=mod)
-		a(href=link).nav__link= text
+mixin menuItemLink(className, mod)
+	case className
+		when 'index-page'
+			li.nav__item(class=mod)
+				a.nav__link Главная
+			li.nav__item
+				a(href="human.html").nav__link Человек
+			li.nav__item
+				a(href="earth.html").nav__link Земля
+			li.nav__item
+				a(href="universe.html").nav__link Вселенная
+			li.nav__item
+				a(href="technology.html").nav__link Технология
+		when 'human-page'
+			li.nav__item
+				a(href="index.html").nav__link Главная
+			li.nav__item(class=mod)
+				a(href="human.html").nav__link Человек
+			li.nav__item
+				a(href="earth.html").nav__link Земля
+			li.nav__item
+				a(href="universe.html").nav__link Вселенная
+			li.nav__item
+				a(href="technology.html").nav__link Технология
+		when 'earth-page'
+			li.nav__item
+				a(href="index.html").nav__link Главная
+			li.nav__item
+				a(href="human.html").nav__link Человек
+			li.nav__item(class=mod)
+				a(href="earth.html").nav__link Земля
+			li.nav__item
+				a(href="universe.html").nav__link Вселенная
+			li.nav__item
+				a(href="technology.html").nav__link Технология
+		when 'universe-page'
+			li.nav__item
+				a(href="index.html").nav__link Главная
+			li.nav__item
+				a(href="human.html").nav__link Человек
+			li.nav__item
+				a(href="earth.html").nav__link Земля
+			li.nav__item(class=mod)
+				a(href="universe.html").nav__link Вселенная
+			li.nav__item
+				a(href="technology.html").nav__link Технология
+		when 'technology-page'
+			li.nav__item
+				a(href="index.html").nav__link Главная
+			li.nav__item
+				a(href="human.html").nav__link Человек
+			li.nav__item
+				a(href="earth.html").nav__link Земля
+			li.nav__item
+				a(href="universe.html").nav__link Вселенная
+			li.nav__item(class=mod)
+				a(href="technology.html").nav__link Технология
+		when 'error-page'
+			li.nav__item
+				a(href="index.html").nav__link Главная
+			li.nav__item
+				a(href="human.html").nav__link Человек
+			li.nav__item
+				a(href="earth.html").nav__link Земля
+			li.nav__item
+				a(href="universe.html").nav__link Вселенная
+			li.nav__item
+				a(href="technology.html").nav__link Технология
 
 mixin icon(name, mod)
 	if(mod)
