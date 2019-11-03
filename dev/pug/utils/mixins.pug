@@ -66,6 +66,17 @@ mixin menuItemLink(className, mod)
 				a(href="universe.html").nav__link Вселенная
 			li.nav__item
 				a(href="technology.html").nav__link Технология
+		when 'single-page'
+			li.nav__item
+				a(href="index.html").nav__link Главная
+			li.nav__item
+				a(href="human.html").nav__link Человек
+			li.nav__item
+				a(href="earth.html").nav__link Земля
+			li.nav__item
+				a(href="universe.html").nav__link Вселенная
+			li.nav__item
+				a(href="technology.html").nav__link Технология
 
 mixin icon(name, mod)
 	if(mod)
