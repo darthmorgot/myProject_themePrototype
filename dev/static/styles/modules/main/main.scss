@@ -73,6 +73,35 @@
 				text-shadow: 0 0 0.2em $white-shadow, 0 0 0.5em $white-shadow;
 			}
 		}
+
+		.pagination {
+			text-align: center;
+
+			&__item {
+				display: inline-block;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border: 1px solid $astra;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+			&__link {
+				color: $astra;
+				text-transform: uppercase;
+				transition: all 0.3s;
+				padding: 10px;
+
+				.icon-arrow {
+					width: 22px;
+					height: 22px;
+					fill: $astra;
+
+					&--left {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
 	}
 }
 
