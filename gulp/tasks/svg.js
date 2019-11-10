@@ -12,7 +12,7 @@ function svg() {
 	return src('./dev/static/images/svg/*.svg')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
-				title: 'Error when optimizing svg',
+				title: 'Error optimizing svg',
 				message: err.message
 			}))
 		}))
@@ -39,7 +39,7 @@ function svg() {
 		}))
 		.pipe(cheerio({
 			run: function($) {
-				$('svg').append('<view id="satellite-view" viewBox="0 0 470 470" /><view id="telescope-view" viewBox="0 470 470.005 470.005" /><use xlink:href="#satellite" width="470" height="470" x="0" y="0"></use><use xlink:href="#telescope" width="470.005" height="470.005" x="0" y="470"></use>');
+				$('svg').append('<view id="satellite-view" viewBox="0 0 470 470" /><view id="telescope-view" viewBox="0 470 470.005 470.005" /><view id="arrow-view" viewBox="0 940.005 448.011 448.011" /><use xlink:href="#satellite" width="470" height="470" x="0" y="0"></use><use xlink:href="#telescope" width="470.005" height="470.005" x="0" y="470"></use><use xlink:href="#arrow" width="448.011" height="448.011" x="0" y="940.005"></use>');
 			},
 			parserOptions: {xmlMode: true}
 		}))

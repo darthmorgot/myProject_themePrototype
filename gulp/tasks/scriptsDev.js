@@ -23,7 +23,7 @@ function scriptsDev() {
 	return src('./dev/static/js/index.js')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
-				title: 'Error when compiling scripts',
+				title: 'Error compiling scripts',
 				message: err.message
 			}))
 		}))

@@ -17,7 +17,7 @@ function imagesBuild() {
 	return src(imgPath.input)
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
-				title: 'Error when optimizing images',
+				title: 'Error optimizing images',
 				message: err.message
 			}))
 		}))

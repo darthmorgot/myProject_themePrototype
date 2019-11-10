@@ -14,7 +14,7 @@ function pugCompile() {
 	return src('./dev/pug/*.pug')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
-				title: 'Error when compiling pug',
+				title: 'Error compiling pug',
 				message: err.message
 			}))
 		}))

@@ -12,7 +12,7 @@ function stylesBuild() {
 	return src('./dev/static/styles/styles.scss')
 		.pipe(plumber({
 			errorHandler: notify.onError(err => ({
-				title: 'Error when compiling styles',
+				title: 'Error compiling styles',
 				message: err.message
 			}))
 		}))
