@@ -50,17 +50,19 @@ main.main
 				p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Буквенных семантика взобравшись но послушавшись от всех сбить lorem даль повстречался она, эта заманивший, алфавит пунктуация даже, о толку рыбного вскоре составитель вдали жизни. Языкового пунктуация даль но вершину жизни свой инициал составитель, по всей продолжил жаренные единственное маленький, речью вопрос от всех реторический все парадигматическая решила! Ее, грустный ты он несколько большого заглавных текстами сбить снова города языком вершину лучше, рыбного продолжил.
 				a(href="single.html").preview__more Жми - узнаешь больше.
 		ul.pagination
-			li.pagination__item.pagination__item--prev
-				a(href="index.html") Назад
 			li.pagination__item
-				a(href="index.html") 1
+				a(href="index.html" aria-label="Предыдущая страница").pagination__link.pagination__link--prev
+					+icon("arrow", "icon-arrow--left")
 			li.pagination__item
-				a(href="index.html") 2
+				a(href="index.html").pagination__link 1
 			li.pagination__item
-				a(href="index.html") 3
+				a(href="index.html").pagination__link 2
 			li.pagination__item
-				a(href="index.html") 4
+				a(href="index.html").pagination__link 3
 			li.pagination__item
-				a(href="index.html") 5
-			li.pagination__item.pagination__item--next
-				a(href="index.html") Вперед
+				a(href="index.html").pagination__link 4
+			li.pagination__item
+				a(href="index.html").pagination__link 5
+			li.pagination__item
+				a(href="index.html" aria-label="Следующая страница").pagination__link.pagination__link--next
+					+icon("arrow")
