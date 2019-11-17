@@ -98,7 +98,7 @@
 				&__more {
 					color: $astra;
 					text-transform: uppercase;
-					transition: all 0.3s;
+					transition: $all-transit;
 				}
 				&__title-link:hover,
 				&__more:hover {

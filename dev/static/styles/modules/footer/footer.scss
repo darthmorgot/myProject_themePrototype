@@ -8,7 +8,7 @@
 	&__author {
 		color: $astra;
 		text-decoration: none;
-		transition: all 0.3s;
+		transition: $all-transit;
 	}
 	&__author:hover {
 		color: $white;
