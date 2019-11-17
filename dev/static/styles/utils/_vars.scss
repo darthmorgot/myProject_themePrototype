@@ -1,3 +1,6 @@
+// Fonts
+$main-font: 'Roboto', sans-serif;
+
 // Colors
 $white: #ffffff;
 $black: #000000;
@@ -10,14 +13,17 @@ $white-shadow: rgba(255, 255, 255, 0.5);
 $silver: #cccccc;
 $scooter: #20B7DF;
 
+// Transition
+$all-transit: all 0.3s;
+
 // Sizes
 $header-height: 7.25em;
 $sidebar-width: 18.75em;
 $tablet-height: 800px;
 $scroll-width: calc(100% - 18.75em);
 $wrapper-height: calc(100vh - 7.25em);
+$base-font-size: 16px;
 
-$base-font-size: 14px;
 $content-size: 1140px;
 $tablet-size: 1139px;
 $tablet-size-small: 930px;
@@ -37,6 +43,3 @@ $breakpoints: (
   "desktop"     : 1248px,
   "desktop-wide": 1440px
 );
-
-// Fonts
-$main-font: 'Roboto', sans-serif;
