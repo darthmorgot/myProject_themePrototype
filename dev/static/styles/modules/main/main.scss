@@ -65,7 +65,7 @@
 			&__more {
 				color: $astra;
 				text-transform: uppercase;
-				transition: all 0.3s;
+				transition: $all-transit;
 			}
 			&__title-link:hover,
 			&__more:hover {
@@ -75,21 +75,34 @@
 		}
 
 		.pagination {
-			text-align: center;
+			display: flex;
+			justify-content: center;
 
 			&__item {
-				display: inline-block;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				display: flex;
+				align-items: center;
 				border: 1px solid $astra;
 				border-radius: 3px;
 				cursor: pointer;
+				margin-right: 5px;
+				transition: $all-transit;
+
+				&--active {
+					background-color: $hemp;
+				}
+				&:hover {
+					background-color: $hemp;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 			&__link {
 				color: $astra;
 				text-transform: uppercase;
-				transition: all 0.3s;
+				transition: $all-transit;
 				padding: 10px;
+				font-size: 1.125em;
 
 				.icon-arrow {
 					width: 22px;
