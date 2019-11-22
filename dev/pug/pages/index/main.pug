@@ -53,7 +53,7 @@ main.main
 			li.pagination__item
 				a(href="index.html" aria-label="Предыдущая страница").pagination__link.pagination__link--prev
 					+icon("arrow", "icon-arrow--left")
-			li.pagination__item
+			li.pagination__item.pagination__item--active
 				a(href="index.html").pagination__link 1
 			li.pagination__item
 				a(href="index.html").pagination__link 2
@@ -62,7 +62,9 @@ main.main
 			li.pagination__item
 				a(href="index.html").pagination__link 4
 			li.pagination__item
-				a(href="index.html").pagination__link 5
+				a(href="index.html").pagination__link ...
+			li.pagination__item
+				a(href="index.html").pagination__link 15
 			li.pagination__item
 				a(href="index.html" aria-label="Следующая страница").pagination__link.pagination__link--next
 					+icon("arrow")
